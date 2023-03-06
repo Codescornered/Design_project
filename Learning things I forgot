@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Design Project</title>
+</head>
+
+<header>
+  <h2 class="Logo">Talk</h2>
+    <nav class="Navigation">
+        <a href="#">Contact</a>
+        <a href="#">About me</a>
+        <a href="#">Contact</a>
+        <a href="#">About me</a>
+    </nav>
+</header>
+<body>
+    <div>
+        <button class="button">login</button>
+        <button class="button">Register</button>
+    </div>
+</body>
+</html>
+
+
+CSS part
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Pictures/websitebackgroun.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.Logo{
+    font-size: 2em;
+    color: #fff;
+    
+}
+.Navigation a{
+
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 100;
+    position: relative;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+.Navigation a::after{
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition-duration: .5s;
+    
+}
+
+.Navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+body .button{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: 2px solid;
+    border-radius: 6px;
+    color: #fff;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+body .button:hover[
+    background: #fff;
+    color: black;
+
+]
